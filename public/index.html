@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار الطلاب</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📝 اختبار الطلاب</h1>
+
+        <div id="login">
+            <input id="name" type="text" placeholder="اكتب اسمك">
+            <button onclick="startQuiz()">دخول</button>
+        </div>
+
+        <div id="quiz" style="display:none">
+
+            <div class="info">
+                <span id="student"></span>
+                <span>الوقت: <b id="timer">0</b> ثانية</span>
+            </div>
+
+            <h2 id="question"></h2>
+
+            <div id="answers"></div>
+
+            <button onclick="nextQuestion()">
+                التالي
+            </button>
+
+        </div>
+
+        <div id="result" style="display:none">
+            <h2>🎉 تم تسليم الاختبار</h2>
+            <p id="resultText"></p>
+        </div>
+
+    </div>
+
+    <script src="student.js"></script>
+
+</body>
+
+</html>
